@@ -1,0 +1,348 @@
+/* --- ESTILOS DO NOVO BANNER (com Flexbox) --- */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-banner {
+    background-image: url('https://plus.unsplash.com/premium_photo-1664302363999-258074e83e0d?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pelo URL da sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Altura do banner */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+    /* Usando Flexbox para centralizar o conteúdo */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+.hero-banner h2 {
+    font-size: 3em;
+    margin: 0 0 10px 0;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 0 20px 0;
+}
+
+.btn-banner {
+    display: inline-block;
+    background-color: #ff6347; /* Cor do botão */
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-banner:hover {
+    background-color: #e5533d;
+}
+
+/* ---------------------------------------------------- */
+/*
+  ESTILOS ANTERIORES DO PROJETO FICAM ABAIXO OU ACIMA
+  (Não remova os estilos que você já tinha!)
+*/
+/* --- Layout com FLEXBOX (para alinhamento de itens) --- */
+.main-header {
+    background-color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between; /* Espaça o h1, a nav e o botão */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.main-nav {
+    /* Mantém os itens da lista alinhados no centro da navegação */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.btn-contact-nav {
+    display: inline-block;
+    background-color: #007bff; /* Cor azul, por exemplo */
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+}
+
+.btn-contact-nav:hover {
+    background-color: #0056b3;
+}
+
+/* --- Layout com CSS GRID (para estrutura da página) --- */
+.main-grid-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.posts-grid {
+    display: grid;
+    /* Usa repeat(auto-fit...) para criar o máximo de colunas possível */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.posts-section {
+    width: 100%;
+}
+
+.post-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Container da grade principal */
+.cards-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+    gap: 20px; /* Espaço entre os cartões */
+    margin: 50px auto;
+    max-width: 1200px; /* Largura máxima do container */
+}
+
+/* Estilo para cada card individual */
+.tour-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que a imagem e o selo fiquem dentro das bordas */
+    display: flex; /* Transforma o card em um container flex */
+    flex-direction: column; /* Alinha os elementos internos em uma coluna */
+}
+
+/* Imagem e selo */
+.card-image-container {
+    position: relative; /* Essencial para posicionar o selo */
+    width: 100%;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorção */
+    display: block;
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffc107;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+}
+
+/* Conteúdo de texto */
+.card-content {
+    padding: 20px;
+    flex-grow: 1; /* Faz o conteúdo ocupar todo o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-location {
+    display: flex; /* Usa Flexbox para alinhar o ícone e o texto */
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-location span {
+    font-size: 1.2em; /* Tamanho do ícone */
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #777;
+    flex-grow: 1; /* Permite que a descrição ocupe o espaço restante */
+}
+
+/* Botão */
+.card-button-container {
+    margin-top: auto; /* Empurra o botão para o fundo do card */
+}
+
+.card-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+.section-header-0 {
+    display: flex; /* Transforma em um container flex */
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    gap: 10px; /* Adiciona um espaço entre o ícone e o texto */
+    margin: 50px auto 20px auto; /* Espaço acima e abaixo do cabeçalho */
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.section-header-1 {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna (topo para baixo) */
+    align-items: flex-start; /* Centraliza a seção horizontalmente */
+    margin: 50px auto 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    text-align: right;
+}
+
+.heading-row {
+    display: flex;
+    align-items: center; /* Alinha ícone e h2 */
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.section-icon {
+    width: 30px; /* Define o tamanho do ícone */
+    height: 30px;
+}
+
+.section-header h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.section-subtitle {
+    font-size: 1.1em;
+    color: #555;
+    margin: 0;
+    max-width: 800px;
+}
+
+/* Container da seção de depoimentos */
+.testimonials-section {
+    background-color: #2196f3;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+/* Container do carrossel e botões */
+.testimonials-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.testimonials-carousel {
+    display: flex;
+    overflow-x: scroll; /* Adiciona a barra de rolagem horizontal */
+    scroll-behavior: smooth; /* Anima a rolagem */
+    -webkit-overflow-scrolling: touch; /* Melhora a rolagem em dispositivos móveis */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Esconde a barra de rolagem (opcional) */
+.testimonials-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo do card de depoimento */
+.testimonial-card {
+    background-color: #fff;
+    color: #333;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    min-width: 280px; /* Garante que os cards não encolham */
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de elevação no hover */
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-card .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-card h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+/* Botões de navegação */
+.nav-btn {
+    background: #fff;
+    border: none;
+    font-size: 2em;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
+    z-index: 10;
+}
