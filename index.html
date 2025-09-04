@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Título do Seu Site</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="main-header">
-        <h1>LOGO</h1>
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="#">Passeios</a></li>
-                    <li><a href="#">Depoimentos</a></li>
-                    <li><a href="#">Sobre nós</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="btn-contact-nav">Entrar em contato</a>
+        <a href="index.html" class="logo-link">
+            <img src="https://images.unsplash.com/vector-1750670941146-d0961f3cad33?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Vivendo em Natal Logo" class="site-logo">
+        </a>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="#">Depoimentos</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-contact-nav">Entrar em contato</a>
     </header>
 
     <section class="hero-banner">
@@ -28,407 +33,536 @@
             <a href="#" class="btn-banner">Comece a Explorar</a>
         </div>
     </section>
-    
+
     <main>
         <div class="section-header-0">
-            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffc107"><path d="M12 2L9.2 8.6l-6.8.9 4.9 4.8-1.1 6.8L12 18.2l6.8 3.3-1.1-6.8 4.9-4.8-6.8-.9L12 2z"/></svg>
+            <svg class="section-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffc107">
+                <path d="M12 2L9.2 8.6l-6.8.9 4.9 4.8-1.1 6.8L12 18.2l6.8 3.3-1.1-6.8 4.9-4.8-6.8-.9L12 2z" />
+            </svg>
             <h2>Passeios Mais Procurados</h2>
         </div>
 
-    <div class="cards-grid-container">
+        <div class="cards-grid-container">
 
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-                <div class="card-badge">⭐ 1º + Vendido</div>
-            </div>
-
-            <div class="card-content">
-                <h3>Passeio 4x4 Natal</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Litoral Sul de Natal</p>
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                    <div class="card-badge">⭐ 1º + Vendido</div>
                 </div>
 
-                <p class="card-description">
-                    Um passeio de 4x4 completo pelo litoral sul de Natal, incluindo museu, o Maior Cajueiro, mirantes, praias, lagoas e aventura nas dunas com pôr do sol.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
+                <div class="card-content">
+                    <h3>Passeio 4x4 Natal</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Litoral Sul de Natal</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio de 4x4 completo pelo litoral sul de Natal, incluindo museu, o Maior Cajueiro,
+                        mirantes, praias, lagoas e aventura nas dunas com pôr do sol.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-                <div class="card-badge">⭐ 2º + Vendido</div>
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
-
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-                <div class="card-badge">⭐ 3º + Vendido</div>
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                    <div class="card-badge">⭐ 2º + Vendido</div>
                 </div>
 
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
                 </div>
-            </div>
-        </article>
+            </article>
 
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-                <div class="card-badge">⭐ 4º + Vendido</div>
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                    <div class="card-badge">⭐ 3º + Vendido</div>
                 </div>
 
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-    </div>
-</main>
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
 
-<main>
-    <div class="section-header-1">
-        <div class="heading-row">
-            <h2>Nossos Passeios</h2>
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                    <div class="card-badge">⭐ 4º + Vendido</div>
+                </div>
+
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <main>
+        <div class="section-header-1">
+            <div class="heading-row">
+                <h2>Nossos Passeios</h2>
+            </div>
+
+            <p class="section-subtitle">
+                Confira os tours e atividades mais populares em Natal e região.
+            </p>
         </div>
 
-        <p class="section-subtitle">
-            Confira os tours e atividades mais populares em Natal e região.
-        </p>    
-    </div>
-    
-    <div class="cards-grid-container">
+        <div class="cards-grid-container">
 
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
-
-            <div class="card-content">
-                <h3>Passeio 4x4 Natal</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Litoral Sul de Natal</p>
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
                 </div>
 
-                <p class="card-description">
-                    Um passeio de 4x4 completo pelo litoral sul de Natal, incluindo museu, o Maior Cajueiro, mirantes, praias, lagoas e aventura nas dunas com pôr do sol.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
+                <div class="card-content">
+                    <h3>Passeio 4x4 Natal</h3>
 
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Litoral Sul de Natal</p>
+                    </div>
 
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
+                    <p class="card-description">
+                        Um passeio de 4x4 completo pelo litoral sul de Natal, incluindo museu, o Maior Cajueiro,
+                        mirantes, praias, lagoas e aventura nas dunas com pôr do sol.
+                    </p>
 
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
-
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
-
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
-
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-
-        <article class="tour-card">
-            <div class="card-image-container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s" alt="Passeio 4x4 Natal" class="card-image">
-            </div>
-
-            <div class="card-content">
-                <h3>Pipa com Praia do Amor</h3>
-                
-                <div class="card-location">
-                    <span>📍</span>
-                    <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
-                </div>
-
-                <p class="card-description">
-                    Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo livre para explorar o charmoso vilarejo.
-                </p>
-                
-                <div class="card-button-container">
-                    <a href="#" class="card-button">Saber Mais</a>
-                </div>
-            </div>
-        </article>
-    </div>
-</main>
-
-<section class="testimonials-section">
-    <div class="testimonials-header">
-        <h2>Nossos Viajantes Amam Natal!</h2>
-    </div>
-
-    <div class="testimonials-container">
-        <button class="nav-btn nav-btn-left">‹</button>
-
-        <div class="testimonials-carousel">
-            <div class="testimonial-card">
-                <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Marcus Vinicius Valerio</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
                     </div>
                 </div>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quo eius, quidem voluptatem incidunt accusamus amet facere beatae labore quas architecto suscipit? Nostrum saepe assumenda consectetur ut, perspiciatis itaque nobis!</p>
-            </div>
+            </article>
 
-            <div class="testimonial-card">
-                 <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Caroline Medeiros</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
-                    </div>
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
                 </div>
-                <p>Excelente atendimento, passeio incrível! 😊</p>
-            </div>
-            
-            <div class="testimonial-card">
-                 <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Karmichael Costa</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
-                    </div>
-                </div>
-                <p>Dia perfeito show, amei tudo.</p>
-            </div>
 
-            <div class="testimonial-card">
-                 <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Karmichael Costa</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
-                    </div>
-                </div>
-                <p>Dia perfeito show, amei tudo.</p>
-            </div>
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
 
-            <div class="testimonial-card">
-                 <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Karmichael Costa</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
                     </div>
-                </div>
-                <p>Dia perfeito show, amei tudo.</p>
-            </div>
 
-            <div class="testimonial-card">
-                 <div class="card-header">
-                    <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
-                    <div class="header-info">
-                        <h3>Karmichael Costa</h3>
-                        <div class="rating">
-                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
-                        </div>
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
                     </div>
                 </div>
-                <p>Dia perfeito show, amei tudo.</p>
-            </div>
+            </article>
+
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                </div>
+
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                </div>
+
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                </div>
+
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tour-card">
+                <div class="card-image-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG_ZbmHhw5hrdjzwk_1ABiMSEO38QTDK2VcA&s"
+                        alt="Passeio 4x4 Natal" class="card-image">
+                </div>
+
+                <div class="card-content">
+                    <h3>Pipa com Praia do Amor</h3>
+
+                    <div class="card-location">
+                        <span>📍</span>
+                        <p>Tibau do Sul e Pipa, Litoral Sul do RN</p>
+                    </div>
+
+                    <p class="card-description">
+                        Um passeio para Pipa, incluindo Tibau do Sul, a Praia do Amor com seu famoso Chapadão, e tempo
+                        livre para explorar o charmoso vilarejo.
+                    </p>
+
+                    <div class="card-button-container">
+                        <a href="#" class="card-button">Saber Mais</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <h2>Nossos Viajantes Amam Natal!</h2>
         </div>
 
-        <button class="nav-btn nav-btn-right">›</button>
-    </div>
-</section>
+        <div class="testimonials-container">
+            <button class="nav-btn nav-btn-left">‹</button>
+
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Marcus Vinicius Valerio</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum quo eius, quidem voluptatem
+                        incidunt accusamus amet facere beatae labore quas architecto suscipit? Nostrum saepe assumenda
+                        consectetur ut, perspiciatis itaque nobis!</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Caroline Medeiros</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Excelente atendimento, passeio incrível! 😊</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Karmichael Costa</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Dia perfeito show, amei tudo.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Karmichael Costa</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Dia perfeito show, amei tudo.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Karmichael Costa</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Dia perfeito show, amei tudo.</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <img src="https://via.placeholder.com/60x60" alt="Foto de Perfil" class="profile-pic">
+                        <div class="header-info">
+                            <h3>Karmichael Costa</h3>
+                            <div class="rating">
+                                <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Dia perfeito show, amei tudo.</p>
+                </div>
+            </div>
+
+            <button class="nav-btn nav-btn-right">›</button>
+        </div>
+    </section>
+
+    <section class="info-section-container">
+        <div class="info-section">
+            <div class="info-image">
+                <img src="https://images.unsplash.com/photo-1689415677161-7f87efdea95f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Vista aérea de Natal">
+            </div>
+
+            <div class="info-content">
+                <h2>Vivendo Natal: Simplificando Seus Passeios em Natal</h2>
+                <p>
+                    Bem-vindo à Vivendo Natal, sua parceira confiável para planejar aventuras inesquecíveis em Natal.
+                    Facilitamos a descoberta e reserva dos melhores passeios e experiências potiguares, garantindo que
+                    sua viagem seja perfeita.
+                </p>
+                <a href="#" class="info-button">Agendar seu passeio</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-grid-container">
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2196f3"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 2a14.5 14.5 0 0 1 0 20M2 12h20"></path>
+                    </svg>
+                </div>
+                <h3>Encontre seu passeio ideal</h3>
+                <p>Navegue por nossos guias de passeios em Natal e receba recomendações personalizadas para descobrir as
+                    experiências que você sempre sonhou.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2196f3"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        <line x1="8" y1="13" x2="16" y2="13"></line>
+                        <line x1="8" y1="9" x2="16" y2="9"></line>
+                    </svg>
+                </div>
+                <h3>Reserve conosco</h3>
+                <p>Garanta seu lugar com facilidade em nossa plataforma intuitiva, que oferece uma ampla seleção de
+                    passeios de buggy, catamarã, city tours e muito mais.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#2196f3"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </div>
+                <h3>Explore Natal</h3>
+                <p>Desfrute de opções de pagamento flexíveis e confirmações instantâneas, permitindo que você se
+                    concentre em criar memórias e explorar as belezas de Natal.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta-section-container">
+        <div class="cta-section">
+            <h2>Vamos Explorar as Belezas do RN</h2>
+            <p>
+                Mergulhe nas belezas de Natal conosco. Descubra paisagens deslumbrantes, como as dunas e as praias
+                paradisíacas, para criar memórias inesquecíveis em suas férias.
+            </p>
+            <a href="#" class="cta-button">Agendar seu passeio</a>
+        </div>
+    </section>
 
     <footer class="main-footer">
-        <div class="container-footer">
-            <p>&copy; 2024 Nome do Seu Site. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+        <div class="footer-content-container">
+            <hr class="footer-divider">
+
+            <div class="footer-info-social">
+                <p class="footer-copyright">
+                    Desenvolvido por Georges do Carmo Pereira – Projeto de Interface – IESB
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/georges-do-carmo" class="social-icon" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-facebook">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/georgesdocarmo/" class="social-icon" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-instagram">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js">
         document.addEventListener('DOMContentLoaded', () => {
-    const carousel = document.querySelector('.testimonials-carousel');
-    const leftBtn = document.querySelector('.nav-btn-left');
-    const rightBtn = document.querySelector('.nav-btn-right');
+            const carousel = document.querySelector('.testimonials-carousel');
+            const leftBtn = document.querySelector('.nav-btn-left');
+            const rightBtn = document.querySelector('.nav-btn-right');
 
-    const cardWidth = 300; // Largura do card + margem (ajuste se necessário)
-    let scrollAmount = 0;
+            const cardWidth = 300; // Largura do card + margem (ajuste se necessário)
+            let scrollAmount = 0;
 
-    // Função para rolagem automática
-    function autoScroll() {
-        scrollAmount += cardWidth;
-        if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
-            scrollAmount = 0; // Volta ao início quando chega ao fim
-        }
-        carousel.scrollTo({
-            left: scrollAmount,
-            behavior: 'smooth'
+            // Função para rolagem automática
+            function autoScroll() {
+                scrollAmount += cardWidth;
+                if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                    scrollAmount = 0; // Volta ao início quando chega ao fim
+                }
+                carousel.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Rolagem manual com os botões
+            leftBtn.addEventListener('click', () => {
+                carousel.scrollBy({
+                    left: -cardWidth,
+                    behavior: 'smooth'
+                });
+            });
+
+            rightBtn.addEventListener('click', () => {
+                carousel.scrollBy({
+                    left: cardWidth,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Inicia a rolagem automática a cada 5 segundos
+            setInterval(autoScroll, 5000);
         });
-    }
-
-    // Rolagem manual com os botões
-    leftBtn.addEventListener('click', () => {
-        carousel.scrollBy({
-            left: -cardWidth,
-            behavior: 'smooth'
-        });
-    });
-
-    rightBtn.addEventListener('click', () => {
-        carousel.scrollBy({
-            left: cardWidth,
-            behavior: 'smooth'
-        });
-    });
-
-    // Inicia a rolagem automática a cada 5 segundos
-    setInterval(autoScroll, 5000);
-});
     </script>
 </body>
+
 </html>

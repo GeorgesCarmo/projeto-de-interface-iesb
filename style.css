@@ -5,8 +5,21 @@ body {
     padding: 0;
 }
 
+/* Estilo para o link da logo */
+.logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilo para a imagem da logo */
+.site-logo {
+    height: 100px; /* Define uma altura fixa para a sua logo */
+    width: auto; /* Mantém a proporção original da imagem */
+}
+
 .hero-banner {
-    background-image: url('https://plus.unsplash.com/premium_photo-1664302363999-258074e83e0d?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pelo URL da sua imagem */
+    background: linear-gradient(rgba(33, 150, 243, 0.7), rgba(105, 130, 150, 0.7)), url('https://plus.unsplash.com/premium_photo-1664302363999-258074e83e0d?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Substitua pelo URL da sua imagem */
     background-size: cover;
     background-position: center;
     height: 400px; /* Altura do banner */
@@ -54,7 +67,7 @@ body {
 */
 /* --- Layout com FLEXBOX (para alinhamento de itens) --- */
 .main-header {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-bottom: 1px solid #ddd;
     display: flex;
@@ -70,12 +83,27 @@ body {
     width: 100%;
 }
 
+/* Estilo para a lista de navegação (ul) */
 .nav-list {
     display: flex;
-    list-style: none;
+    list-style: none; /* Remove os marcadores de lista */
     margin: 0;
     padding: 0;
-    gap: 20px;
+    gap: 25px; /* Adiciona espaço entre os itens da lista */
+}
+
+/* Estilo para os links de navegação (a) */
+.nav-list a {
+    color: #333; /* Cor padrão do texto do link */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 1.25em;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out; /* Adiciona uma transição suave para a cor */
+}
+
+/* Efeito ao passar o mouse sobre os links */
+.nav-list a:hover {
+    color: #2196f3; /* Altera a cor para um azul quando o mouse está sobre o link */
 }
 
 .btn-contact-nav {
@@ -117,14 +145,6 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-}
-
-.main-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
 }
 
 /* Container da grade principal */
@@ -229,6 +249,13 @@ body {
     padding: 0 20px;
 }
 
+.section-header-0 h2 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin: 0;
+    flex-grow: 1; /* Faz o texto ocupar todo o espaço restante */
+}
+
 .section-header-1 {
     display: flex;
     flex-direction: column; /* Alinha os itens em coluna (topo para baixo) */
@@ -237,6 +264,12 @@ body {
     max-width: 1200px;
     padding: 0 20px;
     text-align: right;
+}
+
+.section-header-1 h2 {
+    font-size: 2.5em;
+    color: #007bff;
+    margin: 0 0 10px 0;
 }
 
 .heading-row {
@@ -307,8 +340,9 @@ body {
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    min-width: 280px; /* Garante que os cards não encolham */
+    min-width: 300px; /* Garante que os cards não encolham */
     transition: transform 0.3s ease;
+    min-width: 300px;
 }
 
 /* Efeito de elevação no hover */
@@ -336,13 +370,446 @@ body {
 
 /* Botões de navegação */
 .nav-btn {
-    background: #fff;
     border: none;
+    background-color: #2196f3;
     font-size: 2em;
-    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin: 0 10px;
+    margin: 10px 10px;
     z-index: 10;
+}
+
+/* Container que centraliza a seção na tela */
+.info-section-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* O card principal da seção */
+.info-section {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem e o texto horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: hidden; /* Garante que a imagem com borda arredondada não seja cortada */
+    flex-wrap: wrap; /* Permite que os elementos se quebrem em telas menores */
+}
+
+.info-image {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Garante que a imagem não fique muito pequena */
+    text-align: center;
+}
+
+.info-image img {
+    width: 100%;
+    max-width: 500px; /* Garante que a imagem não fique muito grande */
+    border-radius: 15px;
+    height: auto;
+    display: block;
+}
+
+.info-content {
+    flex: 1; /* Ocupa o espaço disponível */
+    padding-left: 40px;
+    min-width: 300px; /* Garante que o texto não fique muito pequeno */
+}
+
+.info-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+}
+
+.info-content p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Estilo para o botão */
+.info-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.info-button:hover {
+    background-color: #e68a00;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .info-section {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        padding: 20px;
+    }
+    .info-content {
+        padding-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+.features-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features-grid-container {
+    display: flex; /* Transforma o container em flex */
+    justify-content: space-around; /* Distribui os itens uniformemente */
+    gap: 40px; /* Espaço entre os blocos */
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+}
+
+.feature-item {
+    flex-basis: 300px; /* Garante uma largura mínima para cada bloco */
+    flex-grow: 1; /* Permite que os blocos cresçam para preencher o espaço */
+    text-align: center;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    align-items: center; /* Centraliza o ícone verticalmente */
+    justify-content: center; /* Centraliza o ícone horizontalmente */
+}
+
+.feature-icon svg {
+    width: 50px; /* Tamanho do ícone SVG */
+    height: 50px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.feature-item p {
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .features-grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-item {
+        margin-bottom: 30px;
+    }
+}
+
+/* Container que centraliza a seção na tela */
+.cta-section-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* A seção principal com a imagem de fundo e o Flexbox */
+.cta-section {
+    /* Fundo com imagem e cor de sobreposição */
+    background: linear-gradient(rgba(33, 150, 243, 0.7), rgba(170, 207, 236, 0.7)), 
+                url('https://plus.unsplash.com/premium_photo-1753044645390-ca0914b1a4df?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 400px; /* Altura do bloco */
+    text-align: center;
+    padding: 20px;
+
+    /* Usando Flexbox para centralizar o conteúdo */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+}
+
+/* Estilo para o título */
+.cta-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Estilo para o parágrafo */
+.cta-section p {
+    font-size: 1.1em;
+    max-width: 700px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão */
+.cta-button {
+    display: inline-block;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e68a00;
+}
+
+/* Estilização do rodapé principal */
+.main-footer {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    position: relative; /* Para garantir que o z-index funcione corretamente */
+    z-index: 10;
+}
+
+/* Container interno para alinhamento */
+.footer-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Linha divisória */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a linha de copyright e ícones sociais */
+.footer-info-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-copyright {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Ícones sociais */
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5em;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px);
+}
+
+/* Container que centraliza a seção do formulário */
+.contact-page-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Estilo do card do formulário */
+.contact-form-card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form-card h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form-card p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Estilo para o formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de envio */
+.submit-button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #e68a00;
+}
+
+/* Container da seção de preços */
+.pricing-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.pricing-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.pricing-container p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Container que usa Flexbox para a grade */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que os cards quebrem em telas menores */
+}
+
+/* Estilo do card de preço individual */
+.pricing-card {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 350px; /* Limita a largura dos cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-header h3 {
+    font-size: 1.8em;
+    margin: 0;
+    color: #333;
+}
+
+.price {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #2196f3;
+    margin: 20px 0;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.features-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    color: #555;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para o botão de seleção do plano */
+.select-plan-button {
+    display: block;
+    background-color: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.select-plan-button:hover {
+    background-color: #e68a00;
+}
+
+/* Estilo para o card mais popular */
+.pricing-card.popular {
+    transform: scale(1.05);
+    border: 2px solid #2196f3;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.popular-tag {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
